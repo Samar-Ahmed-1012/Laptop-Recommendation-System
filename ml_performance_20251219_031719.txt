@@ -1,0 +1,61 @@
+================================================================================
+🤖 MACHINE LEARNING PERFORMANCE REPORT
+📅 Report Date: 2025-12-19 03:17:19
+================================================================================
+
+💰 REGRESSION MODELS (Price Prediction)
+--------------------------------------------------
+📊 Decision Tree:
+   R² Score: 0.9727
+   MAE: Rs. 5,256
+   RMSE: Rs. 20,340
+
+📊 Random Forest:
+   R² Score: 0.9492
+   MAE: Rs. 5,935
+   RMSE: Rs. 27,710
+
+
+🏷️ CLASSIFICATION MODELS (Category Prediction)
+--------------------------------------------------
+📊 Decision Tree:
+   Accuracy:  0.9574
+   Precision: 0.9583
+   Recall:    0.9574
+   F1-Score:  0.9572
+
+📊 Random Forest:
+   Accuracy:  0.9681
+   Precision: 0.9688
+   Recall:    0.9681
+   F1-Score:  0.9680
+
+
+🎯 BEST PERFORMING MODELS
+--------------------------------------------------
+📈 Price Prediction: Decision Tree
+🏷️ Category Prediction: Random Forest
+
+
+📊 TOP 5 IMPORTANT FEATURES
+--------------------------------------------------
+🔹 For Price Prediction:
+   price_per_ram_gb: 0.5942
+   performance_score: 0.2940
+   price_per_storage_gb: 0.0544
+   ram_gb: 0.0385
+   storage_gb: 0.0168
+
+🔹 For Category Prediction:
+   price_per_ram_gb: 0.3381
+   price_per_storage_gb: 0.2682
+   performance_score: 0.1204
+   ram_gb: 0.0933
+   storage_gb: 0.0766
+
+
+💼 BUSINESS IMPACT
+--------------------------------------------------
+🎯 Price prediction accuracy: 97.3%
+🎯 Category prediction accuracy: 96.8%
+💰 Average prediction error: Rs. 5,256

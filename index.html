@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Finder Pro</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-laptop-code"></i>
+                <span>LaptopFinder Pro</span>
+            </div>
+            <div class="nav-links">
+                <a href="#"><i class="fas fa-home"></i> Home</a>
+                <a href="#"><i class="fas fa-search"></i> Search</a>
+                <a href="#"><i class="fas fa-chart-bar"></i> Stats</a>
+                <a href="#"><i class="fas fa-info-circle"></i> About</a>
+                <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Search Form (Horizontal Bar) -->
+        <div class="search-bar">
+            <h2><i class="fas fa-sliders-h"></i> Filter Preferences</h2>
+            <form id="preference-form" class="horizontal-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="ram"><i class="fas fa-memory"></i> RAM</label>
+                        <select id="ram" name="ram" class="form-control">
+                            <option value="4">4 GB</option>
+                            <option value="8" selected>8 GB</option>
+                            <option value="16">16 GB</option>
+                            <option value="32">32 GB</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="max_price"><i class="fas fa-wallet"></i> Max Budget</label>
+                        <input type="number" id="max_price" name="max_price" class="form-control" 
+                               value="150000" placeholder="Enter amount">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="storage"><i class="fas fa-hdd"></i> Storage</label>
+                        <select id="storage" name="storage" class="form-control">
+                            <option value="128">128 GB</option>
+                            <option value="256">256 GB</option>
+                            <option value="512" selected>512 GB</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="display_size"><i class="fas fa-desktop"></i> Display</label>
+                        <select id="display_size" name="display_size" class="form-control">
+                            <option value="11.6">11.6"</option>
+                            <option value="13.3">13.3"</option>
+                            <option value="14">14"</option>
+                            <option value="15.6" selected>15.6"</option>
+                            <option value="17">17"</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn search-btn">
+                        <i class="fas fa-search"></i> Find Laptops
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Brands Showcase -->
+        <div class="brands-section">
+            <h3><i class="fas fa-tags"></i> Featured Brands</h3>
+            <div class="brands-container">
+                <div class="brand-logo">HP</div>
+                <div class="brand-logo">Dell</div>
+                <div class="brand-logo">Lenovo</div>
+                <div class="brand-logo">Apple</div>
+                <div class="brand-logo">Asus</div>
+                <div class="brand-logo">Acer</div>
+                <div class="brand-logo">MSI</div>
+                <div class="brand-logo">Microsoft</div>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-section">
+            <div class="section-header">
+                <h2><i class="fas fa-laptop-code"></i> Recommended Laptops</h2>
+                <div class="results-count">Showing <span id="results-count">0</span> laptops</div>
+            </div>
+            
+            <div id="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Finding best laptops for you...</p>
+            </div>
+            
+            <div id="results-container" class="laptops-grid"></div>
+        </div>
+
+        <!-- Statistics Section -->
+        <div class="stats-section">
+            <h2><i class="fas fa-chart-line"></i> Market Insights</h2>
+            <div id="stats-container" class="stats-grid"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-laptop-code"></i> LaptopFinder Pro</h3>
+                <p>Professional laptop recommendation system with real-time data analysis.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-envelope"></i> info@laptopfinder.com</p>
+                <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 LaptopFinder Pro. All rights reserved. | Data Science Project</p>
+        </div>
+    </footer>
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-credit-card"></i> Select Payment Method</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="payment-option" data-method="credit-card">
+                    <i class="fas fa-credit-card fa-2x"></i>
+                    <h4>Credit Card</h4>
+                    <p>Pay with Visa, MasterCard, or American Express</p>
+                </div>
+                <div class="payment-option" data-method="paypal">
+                    <i class="fab fa-paypal fa-2x"></i>
+                    <h4>PayPal</h4>
+                    <p>Pay with your PayPal account</p>
+                </div>
+                <div class="payment-option" data-method="jazzcash">
+                    <i class="fas fa-mobile-alt fa-2x"></i>
+                    <h4>JazzCash</h4>
+                    <p>Pay via JazzCash mobile account</p>
+                </div>
+                <div class="payment-option" data-method="bank-transfer">
+                    <i class="fas fa-university fa-2x"></i>
+                    <h4>Bank Transfer</h4>
+                    <p>Direct bank transfer</p>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn cancel-btn">Cancel</button>
+                <button class="btn proceed-btn">Proceed to Payment</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

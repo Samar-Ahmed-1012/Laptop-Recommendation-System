@@ -1,0 +1,93 @@
+================================================================================
+📊 BUSINESS INTELLIGENCE REPORT - PAKISTAN LAPTOP MARKET
+📅 Report Date: 2025-12-19 03:17:15
+================================================================================
+
+1️⃣ MARKET OVERVIEW
+--------------------------------------------------
+📈 Total Laptops Analyzed: 1,407
+💰 Average Price: Rs. 114,117
+📊 Median Price: Rs. 62,999
+🎯 Price Range: Rs. 15,499 - Rs. 995,999
+
+
+2️⃣ BRAND ANALYSIS
+--------------------------------------------------
+HP                 462 laptops ( 32.8%)
+Dell               356 laptops ( 25.3%)
+Lenovo             334 laptops ( 23.7%)
+Apple              112 laptops (  8.0%)
+Acer                56 laptops (  4.0%)
+ASUS                33 laptops (  2.3%)
+Unknown             26 laptops (  1.8%)
+Microsoft           12 laptops (  0.9%)
+Samsung              9 laptops (  0.6%)
+Infinix              6 laptops (  0.4%)
+
+
+3️⃣ PRICE SEGMENT ANALYSIS
+--------------------------------------------------
+Budget             546 laptops ( 38.8%)
+Entry              372 laptops ( 26.4%)
+Premium            200 laptops ( 14.2%)
+Mid                147 laptops ( 10.4%)
+Luxury             142 laptops ( 10.1%)
+
+
+4️⃣ SPECIFICATIONS ANALYSIS
+--------------------------------------------------
+🔹 RAM Distribution:
+   2GB: 16 laptops
+   4GB: 302 laptops
+   8GB: 781 laptops
+   16GB: 268 laptops
+   32GB: 38 laptops
+
+🔹 Storage Distribution:
+   16GB: 112 laptops
+   32GB: 50 laptops
+   64GB: 3 laptops
+   128GB: 133 laptops
+   256GB: 370 laptops
+
+
+5️⃣ TOP BRANDS BY AVERAGE PRICE
+--------------------------------------------------
+MSI             Rs.      299,499
+ASUS            Rs.      242,345
+Acer            Rs.      221,584
+Infinix         Rs.      169,916
+Apple           Rs.      152,811
+Lenovo          Rs.      115,946
+Samsung         Rs.      111,688
+HP              Rs.      110,930
+Unknown         Rs.       80,282
+Dell            Rs.       78,214
+
+
+6️⃣ PROCESSOR DISTRIBUTION
+--------------------------------------------------
+Intel i5                957 ( 68.0%)
+Intel i7                194 ( 13.8%)
+Intel Core Ultra         58 (  4.1%)
+Intel i3                 53 (  3.8%)
+Intel Celeron            48 (  3.4%)
+AMD Ryzen 5              24 (  1.7%)
+Intel i9                 16 (  1.1%)
+Apple M1                 14 (  1.0%)
+Apple M2                 12 (  0.9%)
+AMD Ryzen 7              11 (  0.8%)
+
+
+7️⃣ GAMING LAPTOP MARKET
+--------------------------------------------------
+🎮 Total Gaming Laptops: 128 (9.1%)
+💰 Average Gaming Laptop Price: Rs. 217,257
+
+
+8️⃣ BUSINESS RECOMMENDATIONS
+--------------------------------------------------
+🎯 1. Focus on 'Budget' segment (Most popular)
+🎯 2. HP and Lenovo have highest market share
+🎯 3. Gaming laptops are premium segment opportunity
+🎯 4. 8GB RAM and 512GB SSD are standard specs
